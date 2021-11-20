@@ -1,5 +1,4 @@
 import Character from '../Character';
-import Zombie from '../Zombie';
 
 test('Check Name errors', () => {
   expect(() => new Character(32, 'Fairy')).toThrow();

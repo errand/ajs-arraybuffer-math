@@ -3,9 +3,9 @@
  * @class
  * @extends Character
  */
-import Character from './Character';
+import MathCharacter from './MathCharacter';
 
-export default class Daemon extends Character {
+export default class Daemon extends MathCharacter {
   /**
    * Create a point.
    * @param {string} name - Name of the character
@@ -13,7 +13,7 @@ export default class Daemon extends Character {
    */
   constructor(name, type = 'Daemon') {
     super(name, type);
-    this.attack = 10;
+    this._attack = 10;
     this.defence = 40;
   }
 }

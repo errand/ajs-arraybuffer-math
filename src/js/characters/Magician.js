@@ -3,9 +3,9 @@
  * @class
  * @extends Character
  */
-import Math from './Math';
+import MathCharacter from './MathCharacter';
 
-export default class Magician extends Math {
+export default class Magician extends MathCharacter {
   /**
    * Create a point.
    * @param {string} name - Name of the character
@@ -13,7 +13,7 @@ export default class Magician extends Math {
    */
   constructor(name, type = 'Magician') {
     super(name, type);
-    this.attack = 10;
+    this._attack = 10;
     this.defence = 40;
   }
 }

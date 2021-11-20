@@ -1,6 +1,9 @@
 import Magician from './characters/Magician';
 
-const gendalf = new Magician('Gendalf');
-gendalf.attack = 2;
+const gandalf = new Magician('Gandalf');
+gandalf.stoned = true;
 
-console.log(gendalf);
+gandalf._attack = 100;
+gandalf.attack = 5;
+
+console.log(gandalf);
