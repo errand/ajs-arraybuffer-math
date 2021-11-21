@@ -21,20 +21,10 @@ export default class MathCharacter extends Character {
    * Set the Attack value depending on Distance
    */
   set attack(distance) {
-    switch (distance) {
-      case 2:
-        this._attack -= +(this.attack * 0.1).toFixed(2);
-        break;
-      case 3:
-        this._attack -= +(this.attack * 0.2).toFixed(2);
-        break;
-      case 4:
-        this._attack -= +(this.attack * 0.3).toFixed(2);
-        break;
-      case 5:
-        this._attack -= +(this.attack * 0.4).toFixed(2);
-        break;
-      default: throw new Error('Distanse can\'t be more than 5 and less than 1 square');
+    if (distance > 0 && distance < 6) {
+      this._attack -= +(this.attack * ((distance - 1) / 10)).toFixed(2);
+    } else {
+      throw new Error('Distanse can\'t be more than 5 and less than 1 square');
     }
     if (this.stoned) this._attack -= +(Math.log2(distance) * 5).toFixed(2);
   }

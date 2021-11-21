@@ -103,7 +103,7 @@ test('Test stoned Begemot hits 1', () => {
   Begemot._attack = 100;
   Begemot.stoned = true;
   // eslint-disable-next-line no-return-assign
-  expect(() => Begemot.attack = 1).toThrow();
+  expect(() => Begemot.attack = 0).toThrow();
 });
 
 test('Test stoned Begemot hits 6', () => {

@@ -103,7 +103,7 @@ test('Test stoned Gandalf hits 1', () => {
   gandalf._attack = 100;
   gandalf.stoned = true;
   // eslint-disable-next-line no-return-assign
-  expect(() => gandalf.attack = 1).toThrow();
+  expect(() => gandalf.attack = 0).toThrow();
 });
 
 test('Test stoned Gandalf hits 6', () => {
