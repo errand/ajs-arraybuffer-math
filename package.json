@@ -1,5 +1,5 @@
 {
-  "name": "ajs-containers-map-star",
+  "name": "ajs-arraybuffer-math",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/errand/ajs-containers-map-star.git"
+    "url": "git+https://github.com/errand/ajs-arraybuffer-math.git"
   },
   "author": "Aleksandr Shatskikh",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/errand/ajs-containers-map-star/issues"
+    "url": "https://github.com/errand/ajs-arraybuffer-math/issues"
   },
-  "homepage": "https://github.com/errand/ajs-containers-map-star#readme",
+  "homepage": "https://github.com/errand/ajs-arraybuffer-math#readme",
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
