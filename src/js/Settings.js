@@ -4,7 +4,6 @@
 export default class Settings {
   /**
    * Create a point.
-   * @param {Map} settings - map of the Settings
    */
   constructor() {
     this.defaultSettings = new Map([

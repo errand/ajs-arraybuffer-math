@@ -4,7 +4,6 @@
 export default class Team {
   /**
    * Create a point.
-   * @param {set} members - Unique array of characters
    */
   constructor() {
     this.members = new Set();
